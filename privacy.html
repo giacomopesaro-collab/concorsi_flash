@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – PDF quiz</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 48px 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    }
+    h1 { font-size: 2rem; color: #0D1B2A; margin-bottom: 6px; }
+    .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 36px; }
+    h2 {
+      font-size: 1.15rem;
+      color: #0D1B2A;
+      margin: 36px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #D4AF37;
+    }
+    p { margin-bottom: 12px; }
+    ul { margin: 10px 0 14px 22px; }
+    ul li { margin-bottom: 6px; }
+    a { color: #D4AF37; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #fff8e1;
+      border-left: 4px solid #D4AF37;
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.85rem;
+      color: #aaa;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container { margin: 0; border-radius: 0; padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Applicazione <strong>PDF quiz</strong> — Ultimo aggiornamento: 9 marzo 2025</p>
+
+  <p>La presente Privacy Policy descrive come l'applicazione mobile <strong>PDF quiz</strong> raccoglie, utilizza, conserva e protegge i dati personali degli utenti, in conformità con il <strong>Regolamento (UE) 2016/679 (GDPR)</strong> e il D.Lgs. 196/2003 (Codice Privacy italiano).</p>
+
+  <h2>1. Titolare del Trattamento</h2>
+  <p>Il titolare del trattamento dei dati personali è:</p>
+  <ul>
+    <li><strong>Nome:</strong> Sviluppatore indipendente – PDF quiz</li>
+    <li><strong>Email di contatto:</strong> <a href="mailto:joffete.84@gmail.com">joffete.84@gmail.com</a></li>
+    <li><strong>Paese:</strong> Italia</li>
+  </ul>
+
+  <h2>2. Dati Raccolti</h2>
+  <p>L'app raccoglie le seguenti categorie di dati:</p>
+
+  <p><strong>2.1 Dati di autenticazione</strong></p>
+  <ul>
+    <li>Nome e cognome (da account Google)</li>
+    <li>Indirizzo email</li>
+    <li>Foto profilo (URL immagine da account Google)</li>
+    <li>Identificativo univoco utente (UID Firebase)</li>
+  </ul>
+
+  <p><strong>2.2 Dati di utilizzo</strong></p>
+  <ul>
+    <li>Punteggi e risultati dei quiz</li>
+    <li>Statistiche di studio (XP, livello, streak, sessioni)</li>
+    <li>Mazzi (deck) creati e domande salvate</li>
+    <li>Domande sbagliate</li>
+    <li>Dati di gamification (badge, crediti)</li>
+  </ul>
+
+  <p><strong>2.3 Contenuti caricati dall'utente (PDF)</strong></p>
+  <div class="highlight">
+    ⚠️ <strong>Attenzione:</strong> L'utente può caricare file PDF personali per generare quiz tramite intelligenza artificiale. Tali file possono contenere informazioni sensibili o riservate. Si prega di <strong>non caricare documenti contenenti dati personali di terzi, informazioni sanitarie, finanziarie o classificate</strong>.
+  </div>
+  <ul>
+    <li>Il testo estratto dal PDF viene trasmesso a una Cloud Function sicura e processato tramite le API di Anthropic (Claude AI) per la generazione di domande</li>
+    <li>Il contenuto del PDF <strong>non viene memorizzato permanentemente</strong> nei nostri server né in Firebase: viene usato esclusivamente in fase di elaborazione e poi scartato</li>
+    <li>Le domande generate vengono salvate nel database associato all'account dell'utente</li>
+    <li>Il file PDF originale rimane <strong>solo sul dispositivo dell'utente</strong> e non viene mai caricato integralmente sui nostri server</li>
+  </ul>
+
+  <p><strong>2.4 Dati di acquisto</strong></p>
+  <ul>
+    <li>Stato abbonamento (Free/Pro)</li>
+    <li>I pagamenti sono gestiti interamente da <strong>Google Play</strong> e <strong>RevenueCat</strong>: non raccogliamo né memorizziamo dati di carte di credito o strumenti di pagamento</li>
+  </ul>
+
+  <p><strong>2.5 Dati sociali (funzione amici – solo utenti Pro)</strong></p>
+  <ul>
+    <li>Email degli utenti cercati per l'aggiunta come amici</li>
+    <li>Statistiche di studio condivise con gli amici</li>
+  </ul>
+
+  <h2>3. Finalità del Trattamento</h2>
+  <p>I dati vengono raccolti e trattati per le seguenti finalità:</p>
+  <ul>
+    <li>Autenticazione e gestione dell'account utente</li>
+    <li>Erogazione del servizio (generazione quiz, salvataggio mazzi, statistiche)</li>
+    <li>Gestione degli abbonamenti e dei crediti</li>
+    <li>Miglioramento del servizio attraverso statistiche aggregate anonime</li>
+    <li>Assistenza tecnica e supporto agli utenti</li>
+    <li>Adempimento di obblighi legali</li>
+  </ul>
+
+  <h2>4. Base Giuridica del Trattamento</h2>
+  <ul>
+    <li><strong>Esecuzione del contratto</strong> (art. 6.1.b GDPR): per fornire i servizi dell'app</li>
+    <li><strong>Consenso dell'interessato</strong> (art. 6.1.a GDPR): per il caricamento dei PDF e la generazione AI</li>
+    <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): per sicurezza e prevenzione frodi</li>
+    <li><strong>Obbligo legale</strong> (art. 6.1.c GDPR): per adempimenti fiscali e normativi</li>
+  </ul>
+
+  <h2>5. Terze Parti e Trasferimento Dati</h2>
+  <p>I dati possono essere condivisi con i seguenti fornitori di servizi, ciascuno dotato di proprie misure di sicurezza conformi al GDPR:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (autenticazione, database Firestore, Cloud Functions) — <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a></li>
+    <li><strong>Google Sign-In</strong> — <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy Google</a></li>
+    <li><strong>Anthropic (Claude AI)</strong> — il testo estratto dai PDF viene inviato alle API Anthropic per la generazione di domande — <a href="https://www.anthropic.com/privacy" target="_blank">Privacy Policy Anthropic</a></li>
+    <li><strong>RevenueCat</strong> — gestione abbonamenti e acquisti in-app — <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy RevenueCat</a></li>
+    <li><strong>Google Play</strong> — piattaforma di distribuzione e pagamenti — <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy Google</a></li>
+  </ul>
+  <p>Nessun dato viene venduto a terzi. I trasferimenti verso paesi extra-UE (es. USA) avvengono nel rispetto delle garanzie previste dal GDPR (Standard Contractual Clauses o accordi equivalenti).</p>
+
+  <h2>6. Conservazione dei Dati</h2>
+  <ul>
+    <li><strong>Dati account e di utilizzo:</strong> conservati fino alla cancellazione dell'account da parte dell'utente</li>
+    <li><strong>Contenuto PDF elaborato:</strong> non conservato — eliminato immediatamente dopo la generazione delle domande</li>
+    <li><strong>Dati di acquisto:</strong> conservati per 10 anni per obblighi fiscali di legge</li>
+    <li><strong>Log tecnici:</strong> conservati per massimo 90 giorni</li>
+  </ul>
+
+  <h2>7. Sicurezza dei Dati</h2>
+  <p>Adottiamo misure tecniche e organizzative adeguate per proteggere i dati personali, tra cui:</p>
+  <ul>
+    <li>Trasmissione dati cifrata tramite HTTPS/TLS</li>
+    <li>Autenticazione sicura tramite Google OAuth 2.0</li>
+    <li>Regole di sicurezza Firestore che limitano l'accesso ai soli dati dell'utente autenticato</li>
+    <li>Cloud Functions eseguite in ambiente sicuro e isolato</li>
+    <li>Nessuna memorizzazione di password (autenticazione delegata a Google)</li>
+  </ul>
+  <p>Tuttavia, nessun sistema è infallibile. In caso di violazione dei dati che comporti un rischio per i diritti degli utenti, provvederemo alla notifica nei termini previsti dal GDPR.</p>
+
+  <h2>8. Diritti dell'Interessato</h2>
+  <p>In qualità di interessato, hai il diritto di:</p>
+  <ul>
+    <li><strong>Accesso</strong> (art. 15 GDPR): ottenere conferma del trattamento e copia dei tuoi dati</li>
+    <li><strong>Rettifica</strong> (art. 16 GDPR): correggere dati inesatti</li>
+    <li><strong>Cancellazione</strong> (art. 17 GDPR): richiedere l'eliminazione dei tuoi dati ("diritto all'oblio") — disponibile anche direttamente dall'app nella sezione Profilo → Cancella account</li>
+    <li><strong>Limitazione</strong> (art. 18 GDPR): limitare il trattamento in determinati casi</li>
+    <li><strong>Portabilità</strong> (art. 20 GDPR): ricevere i tuoi dati in formato strutturato</li>
+    <li><strong>Opposizione</strong> (art. 21 GDPR): opporti al trattamento basato su legittimo interesse</li>
+    <li><strong>Revoca del consenso</strong>: in qualsiasi momento, senza pregiudicare la liceità del trattamento precedente</li>
+  </ul>
+  <p>Per esercitare i tuoi diritti, contattaci a: <a href="mailto:joffete.84@gmail.com">joffete.84@gmail.com</a>. Risponderemo entro 30 giorni.</p>
+  <p>Hai inoltre il diritto di proporre reclamo all'autorità di controllo italiana: <strong>Garante per la protezione dei dati personali</strong> — <a href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a></p>
+
+  <h2>9. Minori</h2>
+  <p>L'app non è destinata a minori di 16 anni. Non raccogliamo consapevolmente dati di minori. Se venissimo a conoscenza di dati raccolti da minori senza consenso genitoriale, provvederemo alla loro immediata eliminazione.</p>
+
+  <h2>10. Cookie e Tecnologie di Tracciamento</h2>
+  <p>L'app è un'applicazione mobile Android e non utilizza cookie. Firebase potrebbe raccogliere identificatori di dispositivo anonimi per scopi analitici e di sicurezza, come descritto nella propria privacy policy.</p>
+
+  <h2>11. Modifiche alla Privacy Policy</h2>
+  <p>Ci riserviamo il diritto di modificare la presente Privacy Policy in qualsiasi momento. Le modifiche significative verranno comunicate tramite notifica nell'app o via email. La versione aggiornata sarà sempre disponibile a questo indirizzo. L'uso continuato dell'app dopo le modifiche costituisce accettazione della nuova policy.</p>
+
+  <h2>12. Contatti</h2>
+  <p>Per qualsiasi domanda, richiesta o segnalazione relativa alla privacy:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:joffete.84@gmail.com">joffete.84@gmail.com</a></li>
+    <li><strong>App:</strong> PDF quiz — sezione Profilo → Supporto</li>
+  </ul>
+
+  <div class="footer">
+    PDF quiz — Privacy Policy — Versione 1.0 — 9 marzo 2025<br/>
+    Titolare: Sviluppatore PDF quiz | joffete.84@gmail.com
+  </div>
+
+</div>
+</body>
+</html>
